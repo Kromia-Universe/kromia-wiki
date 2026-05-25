@@ -5,9 +5,6 @@ hero:
   name: "Kromia Wiki"
   text: "Ghidul oficial al comunității"
   tagline: "Totul ce trebuie să știi despre Kromia Universe FiveM Roleplay"
-  image:
-    src: /logo.png
-    alt: Kromia Universe
   actions:
     - theme: brand
       text: Începe aici
@@ -42,11 +39,11 @@ features:
     
   - title: 🎮 Pentru jucători
     details: Creat și menținut de comunitate pentru comunitate
-    link: /contributori/
-    linkText: Contribuie și tu
+    link: https://github.com/Kromia-Universe/kromia-wiki
+    linkText: Contribuie pe GitHub
     
   - title: 🆕 Mereu actualizat
     details: Wiki-ul evolués constant cu feedback-ul jucătorilor și update-urile serverului
-    link: https://github.com/Kromia-Universe/kromia-wiki
-    linkText: Vezi pe GitHub
+    link: https://github.com/Kromia-Universe/kromia-wiki/issues
+    linkText: Raportează probleme
 ---

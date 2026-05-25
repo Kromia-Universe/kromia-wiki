@@ -400,6 +400,17 @@ html:not(.dark) {
   color-scheme: dark !important;
 }
 
-html:not(.dark) .VPSwitchAppearance {
+/* Hide theme switcher completely */
+.VPSwitchAppearance {
+  display: none !important;
+}
+
+/* Hide the social links dividers that appear as | | */
+.VPNavBarSocialLinks::before,
+.VPNavBarSocialLinks::after {
+  display: none !important;
+}
+
+.VPNavBarExtra .divider {
   display: none !important;
 }

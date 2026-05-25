@@ -18,9 +18,8 @@ export default defineConfig({
   ],
 
   // Theme configuration
+  appearance: 'force-dark', // Force dark mode always
   themeConfig: {
-    // Site logo
-    logo: '/logo.png',
     
     // Navigation
     nav: [
