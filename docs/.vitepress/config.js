@@ -237,5 +237,6 @@ export default defineConfig({
 
   // Build options
   cleanUrls: true,
-  metaChunk: true
+  metaChunk: true,
+  ignoreDeadLinks: true
 })
