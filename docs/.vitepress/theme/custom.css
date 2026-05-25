@@ -414,3 +414,35 @@ html:not(.dark) {
 .VPNavBarExtra .divider {
   display: none !important;
 }
+
+/* Hide empty content container on homepage */
+.vp-doc.container:empty {
+  display: none !important;
+}
+
+.vp-doc.container > div:only-child:empty {
+  display: none !important;
+}
+
+/* Hide empty VitePress content divs */
+.Layout .vp-doc:empty,
+.Layout .vp-doc > div:empty:only-child {
+  display: none !important;
+}
+
+/* For homepage layout, hide empty document containers */
+.VPHome ~ .VPContent .vp-doc:empty,
+.VPHome + .VPContent .vp-doc:empty {
+  display: none !important;
+}
+
+/* More specific rule to hide the exact container you're seeing */
+[data-v-8b561e3d][data-v-8e2d4988].vp-doc.container {
+  display: none !important;
+}
+
+/* General rule for homepage to hide any content containers */
+.Layout[data-is-home] .vp-doc.container,
+body[data-page-type="home"] .vp-doc.container {
+  display: none !important;
+}
