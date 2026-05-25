@@ -4,7 +4,7 @@ Ghidul oficial al comunității Kromia Universe FiveM Roleplay Server - construi
 
 ## 🌐 Vezi Wiki-ul Live
 
-**Website**: https://wiki.kromia.ro (va fi setat după deployment)
+**Website**: https://wiki.kromia.ro
 
 ## 🤝 Cum să contribui
 
@@ -23,7 +23,7 @@ Pentru modificări mari sau adăugarea de pagini noi:
 ```bash
 # 1. Fork repository-ul
 # 2. Clonează local
-git clone https://github.com/USERNAME/kromia-wiki.git
+git clone https://github.com/Kromia-Universe/kromia-wiki.git
 cd kromia-wiki
 
 # 3. Instalează dependențele

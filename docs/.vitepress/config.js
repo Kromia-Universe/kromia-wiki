@@ -33,6 +33,7 @@ export default defineConfig({
         text: 'Server',
         items: [
           { text: 'Website', link: 'https://kromia.ro' },
+          { text: 'Store', link: 'https://store.kromia.ro' },
           { text: 'Discord', link: 'https://discord.gg/kromia' }
         ]
       }
@@ -127,7 +128,7 @@ export default defineConfig({
     // Social links
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/kromia' },
-      { icon: 'github', link: 'https://github.com/YOURUSERNAME/kromia-wiki' }
+      { icon: 'github', link: 'https://github.com/Kromia-Universe/kromia-wiki' }
     ],
 
     // Footer
@@ -166,7 +167,7 @@ export default defineConfig({
 
     // Edit link
     editLink: {
-      pattern: 'https://github.com/YOURUSERNAME/kromia-wiki/edit/main/docs/:path',
+      pattern: 'https://github.com/Kromia-Universe/kromia-wiki/edit/main/docs/:path',
       text: 'Editează această pagină pe GitHub'
     },
 

@@ -1,0 +1,405 @@
+/* Kromia Universe Wiki - Vice City Dark Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800&display=swap');
+
+/* Force Dark Mode */
+html {
+  color-scheme: dark !important;
+}
+
+/* Vice City Color Variables */
+:root {
+  /* Primary Brand Colors */
+  --vp-c-brand-1: #ff0080 !important;
+  --vp-c-brand-2: #e6006f !important;
+  --vp-c-brand-3: #cc005e !important;
+  --vp-c-brand-soft: rgba(255, 0, 128, 0.14) !important;
+  
+  /* Secondary Colors */
+  --vp-c-sponsor: #00d4ff !important;
+  --kr-neon-pink: #ff0080;
+  --kr-neon-blue: #00d4ff;
+  --kr-neon-purple: #8a2be2;
+  
+  /* Background Colors - Dark Vice City */
+  --vp-c-bg: #0a001f !important;
+  --vp-c-bg-alt: #1a0033 !important;
+  --vp-c-bg-elv: #2a0066 !important;
+  --vp-c-bg-soft: rgba(26, 0, 51, 0.8) !important;
+  
+  /* Text Colors */
+  --vp-c-text-1: #ffffff !important;
+  --vp-c-text-2: #e6e6ff !important;
+  --vp-c-text-3: #ccccff !important;
+  
+  /* Border and Divider Colors */
+  --vp-c-divider: rgba(255, 0, 128, 0.2) !important;
+  --vp-c-border: rgba(0, 212, 255, 0.3) !important;
+  --vp-c-gutter: rgba(255, 0, 128, 0.1) !important;
+  
+  /* Sidebar Colors */
+  --vp-sidebar-bg-color: rgba(10, 0, 31, 0.95) !important;
+  --vp-c-bg-sidebar: rgba(10, 0, 31, 0.95) !important;
+  
+  /* Navigation Colors */
+  --vp-nav-bg-color: rgba(10, 0, 31, 0.95) !important;
+  --vp-c-bg-nav: rgba(10, 0, 31, 0.95) !important;
+  
+  /* Code Block Colors */
+  --vp-c-code-bg: rgba(255, 0, 128, 0.1) !important;
+  --vp-code-bg: rgba(255, 0, 128, 0.1) !important;
+  
+  /* Warning/Info Colors */
+  --vp-c-warning-1: #ff9900 !important;
+  --vp-c-warning-soft: rgba(255, 153, 0, 0.14) !important;
+  --vp-c-tip-1: #00d4ff !important;
+  --vp-c-tip-soft: rgba(0, 212, 255, 0.14) !important;
+  --vp-c-danger-1: #ff4444 !important;
+  --vp-c-danger-soft: rgba(255, 68, 68, 0.14) !important;
+}
+
+/* Global Background */
+body {
+  background: linear-gradient(135deg, #0a001f 0%, #1a0033 50%, #060015 100%) !important;
+  background-attachment: fixed;
+  font-family: 'Exo 2', sans-serif !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+/* Add cyberpunk grid background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 0, 128, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 128, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Navigation Bar */
+.VPNav {
+  background: rgba(10, 0, 31, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 2px solid rgba(255, 0, 128, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(255, 0, 128, 0.2) !important;
+}
+
+.VPNavBar .title {
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 700 !important;
+  color: #ff0080 !important;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080 !important;
+  font-size: 1.2em !important;
+}
+
+.VPNavBar .title:hover {
+  text-shadow: 0 0 15px #ff0080, 0 0 30px #ff0080, 0 0 45px #ff0080 !important;
+}
+
+/* Sidebar */
+.VPSidebar {
+  background: rgba(10, 0, 31, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-right: 2px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+.VPSidebarItem.level-0 .text {
+  color: #00d4ff !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 5px #00d4ff !important;
+}
+
+.VPSidebarItem.is-active .text {
+  color: #ff0080 !important;
+  text-shadow: 0 0 8px #ff0080 !important;
+}
+
+.VPSidebarItem:hover .text {
+  color: #ff0080 !important;
+}
+
+/* Main Content */
+.VPContent {
+  background: rgba(10, 0, 31, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 0 !important; /* Sharp borders for Vice City */
+  margin: 0 !important;
+  min-height: 100vh;
+}
+
+.vp-doc {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(5px) !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255, 0, 128, 0.2) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.1) !important;
+  padding: 3rem !important;
+  margin: 2rem !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', monospace !important;
+  color: #ff0080 !important;
+  text-shadow: 0 0 10px rgba(255, 0, 128, 0.5) !important;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  border-bottom: 2px solid rgba(255, 0, 128, 0.5) !important;
+  padding-bottom: 0.5rem !important;
+}
+
+h2 {
+  color: #00d4ff !important;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.5) !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+h3 {
+  color: #8a2be2 !important;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.5) !important;
+}
+
+/* Links */
+a {
+  color: #00d4ff !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: #ff0080 !important;
+  text-shadow: 0 0 5px #ff0080 !important;
+  text-decoration: none !important;
+}
+
+/* Buttons */
+.VPButton {
+  border-radius: 0 !important; /* Sharp corners */
+  border: 2px solid #ff0080 !important;
+  background: transparent !important;
+  color: #ff0080 !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPButton:hover {
+  background: #ff0080 !important;
+  color: #0a001f !important;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5) !important;
+  text-shadow: none !important;
+}
+
+.VPButton.brand {
+  background: #ff0080 !important;
+  color: #0a001f !important;
+  border-color: #ff0080 !important;
+}
+
+.VPButton.alt {
+  border-color: #00d4ff !important;
+  color: #00d4ff !important;
+}
+
+.VPButton.alt:hover {
+  background: #00d4ff !important;
+  color: #0a001f !important;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5) !important;
+}
+
+/* Code Blocks */
+.vp-code-group, .vp-code {
+  background: rgba(255, 0, 128, 0.1) !important;
+  border: 1px solid rgba(255, 0, 128, 0.3) !important;
+  border-radius: 0 !important;
+}
+
+code {
+  color: #ff0080 !important;
+  background: rgba(255, 0, 128, 0.15) !important;
+  padding: 2px 6px !important;
+  border-radius: 0 !important;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse !important;
+  border: 2px solid rgba(255, 0, 128, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+th {
+  background: rgba(255, 0, 128, 0.2) !important;
+  color: #ff0080 !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border: 1px solid rgba(255, 0, 128, 0.5) !important;
+}
+
+td {
+  border: 1px solid rgba(0, 212, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+tr:hover {
+  background: rgba(255, 0, 128, 0.05) !important;
+}
+
+/* Custom Containers (tip, warning, etc.) */
+.custom-block {
+  border-radius: 0 !important;
+  border-left: 4px solid !important;
+}
+
+.custom-block.tip {
+  background: rgba(0, 212, 255, 0.1) !important;
+  border-left-color: #00d4ff !important;
+}
+
+.custom-block.warning {
+  background: rgba(255, 153, 0, 0.1) !important;
+  border-left-color: #ff9900 !important;
+}
+
+.custom-block.danger {
+  background: rgba(255, 68, 68, 0.1) !important;
+  border-left-color: #ff4444 !important;
+}
+
+.custom-block.info {
+  background: rgba(138, 43, 226, 0.1) !important;
+  border-left-color: #8a2be2 !important;
+}
+
+.custom-block-title {
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+/* Search */
+.VPNavBarSearch .DocSearch-Button {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 0, 128, 0.3) !important;
+  border-radius: 0 !important;
+  color: #00d4ff !important;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  border-color: #ff0080 !important;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.3) !important;
+}
+
+/* Footer */
+.VPFooter {
+  background: rgba(10, 0, 31, 0.9) !important;
+  border-top: 2px solid rgba(255, 0, 128, 0.3) !important;
+}
+
+.VPFooter .message {
+  color: #00d4ff !important;
+  font-family: 'Orbitron', monospace !important;
+}
+
+/* Home Page Hero */
+.VPHero .name {
+  background: linear-gradient(45deg, #ff0080, #00d4ff) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+}
+
+.VPHero .text {
+  color: #00d4ff !important;
+  font-family: 'Exo 2', sans-serif !important;
+}
+
+.VPHero .tagline {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Feature Cards */
+.VPFeature {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(255, 0, 128, 0.3) !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  border-color: #ff0080 !important;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+
+.VPFeature .title {
+  color: #ff0080 !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 700 !important;
+}
+
+.VPFeature .details {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 0, 31, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff0080, #00d4ff);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #e6006f, #00b8e6);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .vp-doc {
+    margin: 1rem !important;
+    padding: 2rem !important;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  .VPNavBar .title {
+    font-size: 1rem !important;
+  }
+}
+
+/* Force dark theme always */
+.dark, html.dark {
+  color-scheme: dark;
+}
+
+/* Override any light theme variables */
+html:not(.dark) {
+  color-scheme: dark !important;
+}
+
+html:not(.dark) .VPSwitchAppearance {
+  display: none !important;
+}

@@ -47,7 +47,7 @@ features:
     
   - title: 🆕 Mereu actualizat
     details: Wiki-ul evolués constant cu feedback-ul jucătorilor și update-urile serverului
-    link: https://github.com/YOURUSERNAME/kromia-wiki
+    link: https://github.com/Kromia-Universe/kromia-wiki
     linkText: Vezi pe GitHub
 ---
 
