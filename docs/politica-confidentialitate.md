@@ -1,7 +1,5 @@
 # Politica de Confidențialitate
 
-*Ultima actualizare: 26 mai 2026*
-
 ## 1. Informații Generale
 
 Prezenta Politică de Confidențialitate descrie modul în care IQEXPRESSION SOFTWARE S.R.L. (denumită în continuare „noi", „Kromia" sau „compania") colectează, folosește, stochează și protejează informațiile personale ale utilizatorilor serviciilor noastre gaming, inclusiv serverul FiveM Kromia Universe și site-urile web asociate.

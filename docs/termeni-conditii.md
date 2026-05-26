@@ -1,7 +1,5 @@
 # Termeni și Condiții de Utilizare
 
-*Ultima actualizare: 26 mai 2026*
-
 ## 1. Introducere
 
 Bine ați venit la serviciile oferite de IQEXPRESSION SOFTWARE S.R.L. (denumită în continuare „noi", „Kromia", „compania" sau „furnizorul de servicii"). Acești Termeni și Condiții („Termenii") guvernează utilizarea de către dumneavoastră a:
