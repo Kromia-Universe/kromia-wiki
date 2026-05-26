@@ -30,8 +30,8 @@ export default defineConfig({
       { text: 'Ghiduri', link: '/ghiduri/' },
       { text: 'Joburi', link: '/joburi/' },
       { text: 'Comenzi', link: '/comenzi/' },
-      { text: '🌐 Website', link: 'https://kromia.ro' },
-      { text: '🛒 Store', link: 'https://store.kromia.ro' }
+      { text: '🌐', link: 'https://kromia.ro' },
+      { text: '🛒', link: 'https://store.kromia.ro' }
     ],
 
     // Sidebar
