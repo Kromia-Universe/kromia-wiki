@@ -11,6 +11,8 @@ export default defineConfig({
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'ro_RO' }],
     ['meta', { name: 'og:site_name', content: 'Kromia Wiki' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/favicon.png' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
@@ -28,14 +30,8 @@ export default defineConfig({
       { text: 'Ghiduri', link: '/ghiduri/' },
       { text: 'Joburi', link: '/joburi/' },
       { text: 'Comenzi', link: '/comenzi/' },
-      { 
-        text: 'Server',
-        items: [
-          { text: 'Website', link: 'https://kromia.ro' },
-          { text: 'Store', link: 'https://store.kromia.ro' },
-          { text: 'Discord', link: 'https://discord.gg/kromia' }
-        ]
-      }
+      { text: '🌐 Website', link: 'https://kromia.ro' },
+      { text: '🛒 Store', link: 'https://store.kromia.ro' }
     ],
 
     // Sidebar
@@ -132,7 +128,7 @@ export default defineConfig({
 
     // Footer
     footer: {
-      message: 'Construit cu ❤️ pentru comunitatea Kromia Universe',
+      message: 'Construit cu ❤️ pentru comunitatea Kromia Universe | <a href="/politica-confidentialitate">Politica de Confidențialitate</a> | <a href="/termeni-conditii">Termeni și Condiții</a>',
       copyright: '© 2026 Kromia Universe. Toate drepturile rezervate.'
     },
 

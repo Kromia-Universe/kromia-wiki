@@ -120,8 +120,22 @@ body::before {
   text-shadow: 0 0 8px #ff0080 !important;
 }
 
-.VPSidebarItem:hover .text {
+/* Fix hover effect to only affect individual items, not all items */
+.VPSidebarItem:hover > .text {
   color: #ff0080 !important;
+}
+
+.VPSidebarItem.level-0:hover > .text {
+  color: #ff0080 !important;
+}
+
+/* Prevent hover bleeding to child elements */
+.VPSidebarItem .text {
+  transition: color 0.3s ease !important;
+}
+
+.VPSidebarItem:not(:hover) .text {
+  transition: color 0.3s ease !important;
 }
 
 /* Main Content */
@@ -445,4 +459,11 @@ html:not(.dark) {
 .Layout[data-is-home] .vp-doc.container,
 body[data-page-type="home"] .vp-doc.container {
   display: none !important;
+}
+
+/* Fix 404 page styling - Simple override for error pages */
+body[data-route-path="/404"] h1,
+body[data-is-404] h1 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
